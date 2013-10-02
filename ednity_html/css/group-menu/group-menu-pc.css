@@ -1,0 +1,49 @@
+@media all and (min-width: 768px){
+	.group-menu-base{
+		margin-right: 16px;
+		width: 524px;
+	}
+
+	.group-menu-header{
+		display: block;
+		width: 484px;
+		height: 34px;
+		line-height: 34px;
+		padding: 0px;
+		margin: 0;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		text-align: left;
+		position:  relative;
+		overflow: hidden;
+		border: solid 1px #e2e2e2;
+		background-color: #ffffff;
+		color: #444;
+		padding-left: 38px;
+		background-image: url(../../img/top/pin.png);
+		background-repeat: no-repeat;
+		background-position: 7px 3px;
+	}
+
+	.group-menus{
+		width: 517px;
+		border: solid 1px #e2e2e2;
+		border-top: none;
+		height: 34px;
+		line-height: 34px;
+		background-color: #ffffff;
+		padding-left: 5px;
+		background-image: url(../../img/top/arrow.png);
+		background-repeat: no-repeat;
+		background-position: 500px 8px;
+	}
+
+	.group-menus a{
+		display: block;
+	}
+
+	.first{
+		border-top: solid 1px #e2e2e2;
+	}
+
+}

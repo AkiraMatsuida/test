@@ -1,0 +1,184 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+html,body{
+	height: 100%;
+	overflow: hidden;
+}
+
+div.content{
+	min-height: 100%;
+	height: 100%;
+}
+
+body > div.content{
+	height: auto;
+}
+
+#flashMessage {
+	font-size: 14px;
+	color: white;
+	padding: 10px;
+	width: 280px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 10px;
+	background: #676a6d; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY3NmE2ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE5JSIgc3RvcC1jb2xvcj0iIzUzNTY1YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU5JSIgc3RvcC1jb2xvcj0iIzM1MzkzZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iIzM1MzkzZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyMDI1MjgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #676a6d 0%, #53565b 19%, #35393f 59%, #35393f 75%, #202528 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#676a6d), color-stop(19%,#53565b), color-stop(59%,#35393f), color-stop(75%,#35393f), color-stop(100%,#202528)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #676a6d 0%,#53565b 19%,#35393f 59%,#35393f 75%,#202528 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #676a6d 0%,#53565b 19%,#35393f 59%,#35393f 75%,#202528 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #676a6d 0%,#53565b 19%,#35393f 59%,#35393f 75%,#202528 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #676a6d 0%,#53565b 19%,#35393f 59%,#35393f 75%,#202528 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#676a6d', endColorstr='#202528',GradientType=0 ); /* IE6-8 */
+}
+
+
+
+/*----------ヘッダー部分のスタイル----------*/
+
+header{
+	width: 100%;
+	background-color: #fcfcfc;
+	height: 46px;
+}
+
+#inner-header{
+	width: 300px;;
+	/*overflow: hidden;*/
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+}
+
+#inner-header img{
+	display: block;
+	width: 70px;
+	height: 25px;
+	float: left;
+	margin-top: 12px;
+}
+
+#inner-header nav{
+	width: 100px;
+	float: right;
+	height: 100%;
+}
+
+#inner-header ul{
+	list-style-type: none;
+	/*overflow: hidden;*/
+	height: 100%;
+	width: 100%;
+	text-align: right;
+}
+
+#inner-header li{
+	height: 100%;
+	line-height: 80px;
+	float: right;
+	margin-left: 15px;
+	font-size: 14px;
+}
+
+#inner-header li a{
+	display: none;
+}
+
+li#login-btn{
+	display: none;
+}
+
+a.mb-login-btn{
+	display: none!important;
+}
+
+
+
+/*----------ログインフォーム部分のスタイル----------*/
+
+#mb-login-zone{
+	width: 100%;
+	background-color;
+	background-color: #5291e9;
+	padding-bottom: 32767px;
+	margin-bottom: -32767px;
+}
+
+#inner-zone{
+	width: 300px;
+	padding-top: 30px;
+	margin: 0 auto;
+}
+
+#mb-login-zone h2{
+	color: white;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+#inner-zone #UserUsername{
+	width: 298px;
+	font-size: 14px;
+	border-radius: 5px;
+	height: 35px;
+	margin-bottom: 15px;
+	border: solid 1px #e2e2e2;
+}
+
+#inner-zone .pass{
+	width: 298px;
+	font-size: 14px;
+	height: 35px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	border: solid 1px #e2e2e2;
+}
+
+#inner-zone .top-login{
+	width: 298px;
+	height: 35px;
+	border-radius: 5px;
+	margin-left: 2px;
+	margin-top: 5px;
+	font-size:15px;
+	font-family:Arial;
+	font-weight:bold;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #dbbf0b;
+	padding:4px 10px;
+	text-decoration:none;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #ffe354), color-stop(100%, #ffd500) );
+	background:-moz-linear-gradient( center top, #ffe354 5%, #ffd500 100% );
+	background:-ms-linear-gradient( top, #ffe354 5%, #ffd500 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe354', endColorstr='#ffd500');
+	background-color:#ffe354;
+	color:#fffef7;
+	display:inline-block;
+	text-shadow:1px 1px 0px #d9b309;
+	-webkit-box-shadow:inset 1px 1px 0px 0px #fff4bd;
+	-moz-box-shadow:inset 1px 1px 0px 0px #fff4bd;
+	box-shadow:inset 1px 1px 0px 0px #fff4bd;
+}
+
+
+
+/*----------フッター部分のスタイル----------*/
+
+footer{
+	display: none;
+}
+
+/*----------PC用ログインフォーム----------*/
+
+.box{
+	display: none;
+}
+

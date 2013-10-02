@@ -1,0 +1,280 @@
+
+
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Ednity</title>
+        <link rel="stylesheet" type="text/css" href="./css/loginpage/loginpage-base.css" />      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.leanModal.min.js"></script>    <script type="text/javascript" src="/js/jquery.autosize.min.js"></script>    <script type="text/javascript" src="/js/modal.js"></script>    <script type="text/javascript" src="/js/myScript.js"></script>
+    <!-- start Mixpanel -->
+    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);mixpanel.init("93522b6b9137a6a5f030900530ad839e", {track_links_timeout: 2000});
+        mixpanel.track_forms('#signup_teacher', 'Signup modal');
+    </script>
+    <!-- end Mixpanel -->
+</head>
+
+<body id="loginpage">
+    <script>
+        mixpanel.track("Loaded loginpage");
+    </script>
+    <div class="content">
+        <header id="login-header">
+            <div id="inner-header">
+                <a href="/users/login"><img src="/img/login/logo.png" alt="" /></a>                <nav>
+                    <ul>
+                        <li id="modal-zone">
+                            <span id="login-btn">ログイン</span>
+                            <div class="box">
+                                <h2>ログイン</h2>
+                                <form action="/users/login" controller="users" id="UserLoginForm" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>                                <div class="login-fm">
+                                    <input name="data[User][username]" placeholder="ユーザー名、またはメールアドレス" class="login-user" maxlength="50" type="text" id="UserUsername" required="required"/>                                </div>
+                                <div class="login-fm">
+                                    <input name="data[User][password]" placeholder="パスワード" class="pass" id="login-pass" type="password"/>                                </div>
+                                                                <div id="top-login-div">
+                                    <button class="top-login" type="submit">ログイン</button>                                    <a href="#" class="cancel-login-btn">キャンセル</a>
+                                </div>
+
+                                </form>                            </div>
+                        </li>
+                        <li class="last-li">
+                            <a href="/pages/parents">保護者</a>                        </li>
+                        <li>
+                            <a href="/pages/students">生徒</a>                        </li>
+                        <li>
+                            <a href="/pages/teachers">先生</a>                        </li>
+                    </ul>
+                </nav>
+
+                <!--モバイル用メニューボタン-->
+                <img src="/img/login/menu.png" class="mb-menu-btn" alt="" />            </div>
+        </header>
+        <!--モバイル用メニュー一覧-->
+        <ul id="mobile-menu-list">
+            <li>
+                <a href="/pages/teachers">先生</a>            </li>
+            <li>
+                <a href="/pages/students">生徒</a>            </li>
+            <li class="last-li">
+                <a href="/pages/parents">保護者</a>            </li>
+            <li id="mobile-login-li">
+                <a href="/users/mobile_login" class="mb-login-btn">ログイン</a>            </li>
+        </ul>
+
+            <div id="copy">
+        <div id="inner-copy">
+            <div id="main-copy">
+                <h1>あなたのクラスが<br class="mb-br"/>オンラインでも</h1>
+                <p>Ednityはいつもの教室を<br class="mb-br"/>飛び越えて、<br class="pc-br"/>いつでもどこからでも<br class="mb-br"/>生徒の学習を可能にします。</p>
+                <div id="yellow-btns">
+                    <div id="inner-yellow-btns">
+                        <a href="/users/signup" class="sign-up-btn">今すぐはじめる</a>                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mobile-yellow-btns">
+        <a href="/users/signup" class="sign-up-btn">今すぐはじめる</a>    </div>
+    <div id="interface">
+        <p>
+            エドニティーは、学校のクラス向けの<br />プライベートなソーシャルネットワークサービスです。<br />公開範囲はクラス内だけなので、安心して活用することができます。
+        </p>
+        <img src="/img/login/LP-ipad.png" alt="" />    </div>
+    <div id="description">
+        <h2 id="desc-title">ednityならできること。</h2>
+        <div class="desc-box">
+            <img src="/img/login/share.png" id="share" alt="" />            <div id="main-desc-1">
+                <h2>生徒みんなで学びの創造</h2>
+                <p>
+                    生徒みんなが、学習した内容や感想、質問などを共有できます。<br />
+                    それにより、活発な議論が生まれ、互いに刺し合うことで、<br />
+                    生徒それぞれが主体的な学びを生み出すことをサポートします。
+                </p>
+            </div>
+        </div>
+        <div class="dammy-line"></div>
+        <div class="desc-box">
+            <img src="/img/login/quiz.png" id="quize" alt="" />            <div id="main-desc-2">
+                <h2>生徒との距離をぐっと近くに。</h2>
+                <p>
+                    クイズのような感覚で、小テストの作成と回答が行えます。<br />生徒の学習の成果を簡単に、気軽に、素早く知ることができます。<br />授業内にかぎらず、いつでもどこでも理解度チェック！
+                </p>
+            </div>
+        </div>
+        <div class="dammy-line"></div>
+        <div class="desc-box">
+            <img src="/img/login/progress.png" id="progress" alt="" />            <div id="main-desc-3">
+                <h2>成績管理を簡単に。</h2>
+                <p>
+                    クイズの結果は自動で成績としてまとめられます。<br />
+                    定期試験などの公式のテストも結果を入力するだけで、<br />
+                    クイズと統合した成績を、まとめて管理出来ます。
+                </p>
+            </div>
+        </div>
+    </div>
+        <footer>
+            <div id="inner-footer">
+                <ul id="footer-nav">
+                    <li><a href="/users/login">ednityについて</a></li>
+                    <li><a href="/pages/about">運営会社</a></li>
+                    <li><a href="/pages/terms">利用規約</a></li>
+                    <li><a href="/pages/privacy">プライバシーポリシー</a></li>
+                    <li><a href="/pages/contact">お問い合わせ</a></li>
+                    <li><a href="http://blog.ednity.com/">Blog</a></li>
+                </ul>
+                <div id="right-footer">
+                    <small>Copyright @ Ednity, Inc. All Rights Reserved</small>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!--ログインフォーム用レイヤー-->
+    <div id="login-layer"></div>
+
+
+    <!--エラー時処理-->
+            
+    
+
+    <!--先生ページ、生徒ページからリダイレクトされた時の各signupフォーム表示処理-->
+    
+
+    <!--インライン用スクリプト-->
+    <script>
+    //signup時のバリデーション処理
+    $("#signup_teacher_form").submit(function(){
+        var error = [];
+        var password = $(".teacher-pass").val();
+        var email = $(".teacher-email").val();
+        var school = $(".teacher-school").val();
+        var phone = $(".teacher-phone").val();
+        var term = $("#teacher-term").attr("checked");
+
+
+        $(".error").html("");
+
+        if(!password.match(/([0-9].*[a-zA-Z]|[a-zA-Z].*[0-9])/) || password.length < 7){
+            error.push("teacher-pass-error");
+        }
+
+        if(school == ""){
+            error.push("teacher-school-error");
+        }
+
+        if(phone == ""){
+            error.push("teacher-phone-error");
+        }
+
+        /*
+        if(!phone.match(/^[0-9-]{6,9}$|^[0-9-]{12}$/)){
+            error.push("teacher-phone-error");
+        }
+        */
+
+        if(term != "checked"){
+            error.push("teacher-term-error");
+        }
+
+        var result = $.ajax({
+            type: 'GET',
+            url: '/users/email_check/' + email,
+            async: false
+        })
+
+        result = JSON.parse(result.responseText);
+        if(result.email.exist > 0){
+            error.push("teacher-email-duplicate");
+        }
+
+        if(error.length > 0){
+            for(var i = 0; i < error.length; i++){
+                switch(error[i]){
+                    case "teacher-pass-error":
+                        $("#teacher-pass-error").css("display", "block");
+                        $("#teacher-pass-error").html("8文字以上の半角英数字で記入下さい。");
+                        break;
+                    case "teacher-email-duplicate":
+                        $("#teacher-email-duplicate").css("display", "block");
+                        $("#teacher-email-duplicate").html("そのメールアドレスは既に使われています。");
+                        break;
+                    case "teacher-school-error":
+                        $("#teacher-school-error").css("display", "block");
+                        $("#teacher-school-error").html("学校名を記入して下さい。");
+                        break;
+                    case "teacher-phone-error":
+                        $("#teacher-phone-error").css("display", "block");
+                        $("#teacher-phone-error").html("所属教育機関の電話番号を記入して下さい。");
+                        break;
+                    case "teacher-term-error":
+                        $("#teacher-term-error").css("display", "block");
+                        $("#teacher-term-error").html("利用規約に同意下さい。");
+                        break;
+                }
+            }
+
+            return false;
+        }
+    })
+
+    $("#signup_student_form").submit(function(){
+        var error = [];
+        var password = $(".student-pass").val();
+        var username = $(".student-username").val();
+        var term = $("#student-term").attr("checked");
+
+        if(!password.match(/([0-9].*[a-zA-Z]|[a-zA-Z].*[0-9])/) || password.length < 7){
+            error.push("student-pass-error");
+        }
+
+        if(username.match(/^[1-9][0-9]*$/)){
+            error.push("student-username-error");
+        }
+
+        var result = $.ajax({
+            type: 'GET',
+            url: '/users/username_check/' + username,
+            async: false
+        })
+
+        result = JSON.parse(result.responseText);
+
+        if(result.username.exist > 0){
+            error.push("student-username-duplicate");
+        }
+
+        if(term != "checked"){
+            error.push("student-term-error");
+        }
+
+        if(error.length > 0){
+            for(var i = 0; i < error.length; i++){
+                switch(error[i]){
+                    case "student-pass-error":
+                        $("#student-pass-error").css("display", "block");
+                        $("#student-pass-error").html("8文字以上の半角英数字で記入下さい。");
+                        break;
+                    case "student-username-error":
+                        $("#student-username-error").css("display", "block");
+                        $("#student-username-error").html("半角英数字で記入下さい。");
+                        break;
+                    case "student-username-duplicate":
+                        $("#student-username-duplicate").css("display", "block");
+                        $("#student-username-duplicate").html("そのユーザーネームは既に使われています。");
+                        break;
+                    case "student-term-error":
+                        $("#student-term-error").css("display", "block");
+                        $("#student-term-error").html("利用規約に同意下さい。");
+                        break;
+                }
+            }
+
+            return false;
+        }
+    })
+    </script>
+</body>
+</html>

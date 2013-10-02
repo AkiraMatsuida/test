@@ -1,0 +1,98 @@
+/*----------全体の共通のデザイン----------*/
+*{
+	margin: 0;
+	padding: 0;
+	border-radius: 3px;
+}
+
+html,body{
+	height: 100%;
+}
+
+body{
+	margin: 0px;
+	font-size: 14px;
+	font-family:'Lucida Grande',　'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',　Meiryo, メイリオ, sans-serif;
+}
+
+a{
+	color: #444444;
+	text-decoration: none;
+}
+
+body > div#container{
+	height: auto;
+}
+
+/*----------ヘッダー部分のスタイル----------*/
+
+header{
+	width: 100%;
+	background-color: #ffffff;
+	height: 80px;
+	box-shadow:  2px 2px 5px rgba(92, 154, 239, 0.4), -2px -2px 5px rgba(92, 154, 239, 0.4);
+}
+
+#inner-header{
+	width: 80%;
+	max-width: 960px;
+	/*overflow: hidden;*/
+	margin: 0 auto;
+	height: 100%;
+}
+
+#inner-header img{
+	display: block;
+	width: 110px;
+	height: 35px;
+	float: left;
+	margin-top: 23px;
+	margin-left: 5px;
+}
+
+
+/*-----ログインフォームのデザイン-----*/
+
+#login-zone{
+	width: 260px;
+	margin: 0 auto;
+	margin-top: 100px;
+	border: solid 1px #c9c9c9;
+	background-color: #ffffff;
+	padding: 20px;
+}
+
+#login-zone input{
+	width: 258px;
+	height: 30px;
+	margin-bottom: 20px;
+	border: solid 1px #dcdcdc;
+	padding-left: 10px;
+}
+
+.login-btn{
+	display: block;
+	width: 120px;
+	height: 40px;
+	line-height: 30px;
+	margin: 0 auto;
+	font-size:13px;
+	font-family:Arial;
+	font-weight:bold;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius: 3px;
+	border: 1px solid #277ae6;
+	text-decoration:none;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #62a2f5), color-stop(100%, #5291e9) );
+	background:-moz-linear-gradient( center top, #62a2f5 5%, #5291e9 100% );
+	background:-ms-linear-gradient( top, #62a2f5 5%, #5291e9 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#62a2f5', endColorstr='#5291e9');
+	background-color:#62a2f5;
+	color:#ffffff;
+	text-shadow:1px 1px 0px #204e8a;
+	-webkit-box-shadow:inset 1px 1px 0px 0px #6da7f2;
+	-moz-box-shadow:inset 1px 1px 0px 0px #6da7f2;
+	box-shadow:inset 1px 1px 0px 0px #6da7f2;
+	cursor: pointer;
+}

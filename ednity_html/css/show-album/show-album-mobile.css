@@ -1,0 +1,38 @@
+#album-header{
+	display: none;
+}
+
+#album-zone{
+	width: 300px;
+	margin: 0 auto;
+}
+
+.album{
+	width: 298px;
+	border: solid 1px #e2e2e2;
+	height: 50px;
+	background-color: #fcfcfc;
+	margin: 0 auto;
+	background-image: url(../../img/top/arrow.png);
+	background-repeat: no-repeat;
+	background-position: 280px 15px;
+	display: block;
+	text-decoration: none;
+}
+
+.album img{
+	width: 34px;
+	height: 34px;
+	margin: 7px;
+	float: left;
+	border: solid 1px #e2e2e2;
+}
+
+.album-name{
+	color: #5291e9;
+}
+
+.album-name{
+	margin-top: 5px;
+	color: #444;
+}

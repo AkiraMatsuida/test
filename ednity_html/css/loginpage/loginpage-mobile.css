@@ -1,0 +1,488 @@
+/*----------スマホ用デザイン----------*/
+/*----------共通のデザイン----------*/
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+html,body{
+	height: 100%;
+	/*overflow: hidden;*/
+}
+
+div.content{
+	min-height: 100%;
+	height: 100%;
+	background-color: #ffffff;
+}
+
+body > div.content{
+	height: auto;
+}
+
+/*
+body{
+	background: url(../../img/login/bg.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+*/
+
+#flashMessage {
+	font-size: 12px !important;
+	color: red;
+	height: 20px !important;
+	line-height: 20px !important;
+	width: 272px;
+	margin-top: 5px !important;
+	margin-bottom: -15px !important;
+}
+
+
+
+/*----------ヘッダー部分のスタイル----------*/
+
+header{
+	width: 100%;
+	background-color: #ffffff;
+	height: 46px;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	box-shadow:  2px 2px 5px rgba(92, 154, 239, 0.4), -2px -2px 5px rgba(92, 154, 239, 0.4);
+}
+
+#inner-header{
+	width: 300px;;
+	/*overflow: hidden;*/
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+}
+
+#inner-header img{
+	display: block;
+	width: 70px;
+	height: 25px;
+	float: left;
+	margin-top: 12px;
+}
+
+#inner-header nav{
+	display: none;
+	width: 100px;
+	float: right;
+	height: 100%;
+}
+
+#inner-header ul{
+	list-style-type: none;
+	/*overflow: hidden;*/
+	height: 100%;
+	width: 100%;
+	text-align: right;
+}
+
+#inner-header li{
+	height: 100%;
+	line-height: 80px;
+	float: right;
+	margin-left: 15px;
+	font-size: 14px;
+}
+
+#inner-header li a{
+	display: none;
+}
+
+#modal-zone #login-btn{
+	display: none;
+}
+
+img.mb-menu-btn{
+	margin-top: 10px !important;
+	width: 32px !important;
+	height: 25px !important;
+	float: right !important;
+}
+
+#mobile-menu-list{
+	width: 100%;
+	border: solid 1px #dddddd;
+	background-color: #ffffff;
+	display: none;
+	text-align: center;
+}
+
+#mobile-menu-list li{
+	background-color: #d2d7db;
+	text-align: center;
+	height: 70px;
+	line-height: 70px;
+	border-bottom: solid 1px #adb5bc;
+}
+
+#mobile-menu-list li a{
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+}
+
+#mobile-login-li{
+	padding-top: 15px;
+	height: 55px !important;
+	line-height: 40px !important;
+}
+
+a.mb-login-btn{
+	display: block!important;
+	font-size: 14px;
+	line-height: 40px;
+	height: 40px;
+	width: 270px;
+	margin: 0 auto;
+	text-align: center;
+	font-family:Arial;
+	font-weight:bold;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius: 3px;
+	border:1px solid #277ae6;
+	text-decoration:none;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #62a2f5), color-stop(100%, #5291e9) );
+	background:-moz-linear-gradient( center top, #62a2f5 5%, #5291e9 100% );
+	background:-ms-linear-gradient( top, #62a2f5 5%, #5291e9 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#62a2f5', endColorstr='#5291e9');
+	background-color:#62a2f5;
+	color:#ffffff;
+	display:inline-block;
+	text-shadow:1px 1px 0px #204e8a;
+	-webkit-box-shadow:inset 1px 1px 0px 0px #6da7f2;
+	-moz-box-shadow:inset 1px 1px 0px 0px #6da7f2;
+	box-shadow:inset 1px 1px 0px 0px #6da7f2;
+}
+
+
+
+/*----------copy部分のスタイル----------*/
+
+#copy{
+	width: 100%;
+	/*background-color: #5291e9;*/
+	background-image: url(../../img/login/copy-mobile-photo.jpg);
+	background-repeat: no-repeat;
+	height: 220px;
+	background-position: top right;
+}
+
+#main-copy{
+	width: 300px;
+	margin: 0 auto;
+}
+
+#copy h1{
+	color: #ffffff;
+	text-align: left;
+	font-weight: bold;
+	padding-top: 50px;
+	font-size: 20px;
+	margin-bottom: 10px;
+	/*margin: 0!important;*/
+	letter-spacing: 0.3em;
+	text-shadow: 1px 1px 1px rgba(158, 144, 138, 1);
+	line-height: 1.3;
+}
+
+#copy p{
+	color: #ffffff;
+	text-align: left;
+	margin-top: 10px;
+	font-size: 14px;
+	letter-spacing: 0.3em;
+	text-shadow: 1px 1px 1px rgba(158, 144, 138, 1);
+}
+
+#main-copy small{
+	display: none;
+}
+
+#yellow-btns{
+	display: none;
+}
+
+#mobile-yellow-btns{
+	padding-top: 20px;
+	padding-bottom: 10px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+	text-align: center;
+}
+
+.sign-up-btn{
+	font-size:18px;
+	font-family:Arial;
+	font-weight:bold;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #dbbf0b;
+	padding:10px 30px;
+	text-decoration:none;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #ffe354), color-stop(100%, #ffd500) );
+	background:-moz-linear-gradient( center top, #ffe354 5%, #ffd500 100% );
+	background:-ms-linear-gradient( top, #ffe354 5%, #ffd500 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe354', endColorstr='#ffd500');
+	background-color:#ffe354;
+	color:#fffef7;
+	display:inline-block;
+	text-shadow:1px 1px 0px #d9b309;
+	-webkit-box-shadow:inset 1px 1px 0px 0px #fff4bd;
+	-moz-box-shadow:inset 1px 1px 0px 0px #fff4bd;
+	box-shadow:inset 1px 1px 0px 0px #fff4bd;
+	/*float: left;*/
+	margin: 15px auto;
+	cursor: pointer;
+}
+
+/*----------interface部分のスタイル----------*/
+#interface{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+
+#interface p{
+	text-align:  center;
+	font-size: 16px;
+	color: #444;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 18px;
+	letter-spacing: 0.2em;
+	line-height: 2.0;
+	width: 300px;
+}
+
+#interface img{
+	display: block;
+	margin: 0 auto;
+	width: 300px;
+}
+
+
+/*-----------description部分のスタイル----------*/
+
+#description{
+	width: 100%;
+	margin: 0 auto;
+	background-color: #fcfcfc;
+}
+
+#description #desc-title{
+	text-align: center;
+	color: #444;
+	font-size: 18px;
+	padding-top: 50px;
+	margin-bottom:  50px;
+	font-weight: normal;
+	letter-spacing: 0.3em;
+}
+
+.desc-box{
+	width: 300px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.desc-box br{
+	display: none;
+}
+
+.desc-box h2{
+	letter-spacing: 0.3em;
+}
+
+#share{
+	display: block;
+	width: 100px;
+	margin: 0 auto;
+	/*margin-right: 50px;*/
+}
+
+#main-desc-1{
+	color: #444;
+	width: 300px;
+}
+
+#main-desc-1 h2{
+	margin-top:  10px;
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 10px;
+	font-weight: normal;
+}
+
+#main-desc-1 p{
+	font-size: 12px;
+	line-height: 2.0;
+}
+
+#quize{
+	display: block;
+	width: 100px;
+	margin: 0 auto;
+	/*margin-right: 50px;*/
+}
+
+#main-desc-2{
+	color: #444;
+	width: 300px;
+}
+
+#main-desc-2 h2{
+	margin-top:  10px;
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 10px;
+	font-weight: normal;
+}
+
+#main-desc-2 p{
+	font-size: 12px;
+	line-height: 2.0;
+}
+
+#progress{
+	display: block;
+	width: 100px;
+	margin: 0 auto;
+	/*margin-right: 50px;*/
+}
+
+#main-desc-3{
+	color: #444;
+	width: 300px;
+}
+
+#main-desc-3 h2{
+	margin-top:  10px;
+	font-size: 16px;
+	margin-bottom: 10px;
+	font-weight: normal;
+	text-align: center;
+}
+
+#main-desc-3 p{
+	font-size: 12px;
+	line-height: 2.0;
+	margin-bottom: 40px;
+}
+
+.dammy-line{
+	width: 300px;
+	height: 2px;
+	margin: 0 auto;
+	background-image: url(../../img/login/line.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+
+/*----------フッター部分のスタイル----------*/
+
+footer{
+	width: 100%;
+	min-height: 80px;
+	background-color: #4291e9;
+	padding-bottom: 15px;
+}
+
+#inner-footer{
+	width: 300px;
+	margin: 0 auto;
+	height: 100%;
+	overflow: hidden;
+}
+
+#footer-nav{
+	text-align: center;
+	margin-left: 0px;
+	overflow: hidden;
+	list-style-type: none;
+	padding-top: 25px;
+}
+
+#footer-nav li{
+	/*float: left;*/
+	font-size: 14px;
+	color: #fff;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+#footer-nav li a{
+	color: #fff;
+	text-decoration: none;
+}
+
+#right-footer{
+	margin: 0 auto;
+	text-align: center;
+	width: 300px;
+	line-height: 40px;
+	color: #93c6f9;
+	font-size: 10px;
+}
+
+
+
+/*----------ログインフォーム----------*/
+
+
+.box{
+	display: none;
+}
+
+
+
+/*----------モーダルウインドウ共通デザイン----------*/
+
+#lean_overlay{
+	position: fixed; z-index:100;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	display: none;
+}
+
+
+/*----------ブラックアウト用レイヤー----------*/
+
+#layer{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.7;
+	z-index: 100;
+	display:  none;
+}
+
+
+.mb-br{
+	display: block;
+}
+
+.pc-br{
+	display: none;
+}

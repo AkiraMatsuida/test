@@ -1,0 +1,650 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+/*----------PC用のスタイル----------*/
+
+@media all and (min-width: 768px){
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	}
+
+	html,body{
+		height: 100%;
+		overflow: visible;
+	}
+
+	div.content{
+		background-color: #ffffff;
+	}
+
+	#flashMessage {
+		font-size: 12px !important;
+		color: red;
+		height: 20px !important;
+		line-height: 20px !important;
+		width: 272px;
+		margin-top: 5px !important;
+		margin-bottom: -15px !important;
+	}
+
+
+
+	/*----------ヘッダー部分のスタイル----------*/
+
+	header{
+		width: 100%;
+		background-color: #ffffff;
+		height: 80px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 60;
+		box-shadow:  2px 2px 5px rgba(92, 154, 239, 0.4), -2px -2px 5px rgba(92, 154, 239, 0.4);
+	}
+
+	#inner-header{
+		width: 80%;
+		max-width: 960px;
+		margin: 0 auto;
+		height: 100%;
+	}
+
+	#inner-header img{
+		display: block;
+		width: 110px;
+		height: 35px;
+		float: left;
+		margin-top: 23px;
+		margin-left: 5px;
+	}
+
+	#inner-header nav{
+		display: block;
+		width: 450px;
+		float: right;
+		height: 100%;
+		margin-right: 5px;
+	}
+
+	#inner-header ul{
+		list-style-type: none;
+		height: 100%;
+		width: 100%;
+		text-align: right;
+	}
+
+	#inner-header li{
+		height: 100%;
+		width: 80px;
+		line-height: 80px;
+		float: right;
+		margin-left: 0px;
+		font-size: 14px;
+		text-align: center;
+	}
+
+	#inner-header a{
+		display: inline;
+		text-decoration: none;
+		color: #444;
+	}
+
+	#inner-header li a{
+		display: block;
+	}
+
+	#inner-header li a:hover{
+		background-color: #f7f7f7;
+	}
+
+	#inner-header li.last-li{
+		margin-right: 20px;
+	}
+
+	#modal-zone{
+		position: relative;
+		margin-top: 0px;
+	}
+
+	#modal-zone #login-btn{
+		display: block !important;
+		text-align: center;
+		width: 60px;
+		margin-top: 25px;
+		height: 20px;
+		line-height: 20px;
+		font-size:13px;
+		font-family:Arial;
+		font-weight:bold;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+		border-radius:25px;
+		border:1px solid #277ae6;
+		padding:4px 15px;
+		text-decoration:none;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #62a2f5), color-stop(100%, #5291e9) );
+		background:-moz-linear-gradient( center top, #62a2f5 5%, #5291e9 100% );
+		background:-ms-linear-gradient( top, #62a2f5 5%, #5291e9 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#62a2f5', endColorstr='#5291e9');
+		background-color:#62a2f5;
+		color:#ffffff;
+		text-shadow:1px 1px 0px #204e8a;
+		-webkit-box-shadow:inset 1px 1px 0px 0px #6da7f2;
+		-moz-box-shadow:inset 1px 1px 0px 0px #6da7f2;
+		box-shadow:inset 1px 1px 0px 0px #6da7f2;
+		cursor: pointer;
+	}
+
+	#modal-zone #login-btn:hover{
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #5291e9), color-stop(100%, #62a2f5) );
+		background:-moz-linear-gradient( center top, #5291e9 5%, #62a2f5 100% );
+		background:-ms-linear-gradient( top, #5291e9 5%, #62a2f5 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5291e9', endColorstr='#62a2f5');
+		background-color:#5291e9;
+	}
+
+	#modal-zone #login-btn:active{
+		position:relative;
+		top:1px;
+	}
+
+	.mb-menu-btn{
+		display: none!important;
+	}
+
+	#mobile-menu-list{
+		display: none;
+	}
+
+
+	/*----------コンテンツ部分のスタイル----------*/
+	#wrap-signup{
+		margin-top: 80px;
+		background-color: #eef1f4;
+		padding-bottom: 120px;
+	}
+
+	#sign-up-title{
+		text-align: center;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		font-size: 16px;
+		color: #444;
+	}
+
+	#tab-zone{
+		width: 600px;
+		margin: 0 auto;
+		border-top: solid 1px #dcdcdc;
+		border-left: solid 1px #dcdcdc;
+		border-right: solid 1px #dcdcdc;
+		height: 50px;
+		overflow: hidden;
+	}
+
+	.tab{
+		background-color: #fafafa;
+	}
+
+	#left-tab{
+		width: 199px;
+		height: 49px;
+		text-align: center;
+		line-height: 50px;
+		color: #444;
+		font-size: 16px;
+		float: left;
+		border-right: solid 1px #dcdcdc;
+		border-bottom: solid 1px #dcdcdc;
+		cursor: pointer;
+	}
+
+	#center-tab{
+		width: 199px;
+		height: 49px;
+		text-align: center;
+		line-height: 50px;
+		color: #444;
+		font-size: 16px;
+		float: left;
+		border-right: solid 1px #dcdcdc;
+		border-bottom: solid 1px #dcdcdc;
+		cursor: pointer;
+	}
+
+	#right-tab{
+		width: 200px;
+		height: 49px;
+		text-align: center;
+		line-height: 50px;
+		color: #444;
+		font-size: 16px;
+		border-bottom: solid 1px #dcdcdc;
+		float: left;
+		cursor: pointer;
+	}
+
+	.selected{
+		height: 50px !important;
+		background-color: #fff;
+		border-bottom: none;
+	}
+
+	.signup-zone{
+		width: 500px;
+		margin: 0 auto;
+		padding: 15px 50px;
+		border: solid 1px #dcdcdc;
+		border-top: none;
+		display: none;
+		min-height: 456px;
+	}
+
+	.signup-zone h2{
+		color: #444;
+		font-size: 14px;
+		margin-top: 20px;
+	}
+
+	.selected-form{
+		display: block;
+		background-color: #fff;
+	}
+
+
+	/*----------モーダルウインドウ共通デザイン----------*/
+
+
+	.modal-fm{
+		width: 470px;
+		margin: 0 auto;
+		margin-bottom: 0px;
+		overflow: hidden;
+	}
+
+	.must{
+		font-size: 4px;
+		color: red;
+		margin-bottom: -5px;
+	}
+
+	#UserLastname{
+		width: 230px;
+		border-radius: 3px;
+		height: 30px;
+		border: none;
+		border: 1px solid #dcdcdc;
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1) inset;
+		box-sizing: border-box;
+		padding-left: 6px;
+		color: #444;
+	}
+
+	#UserFirstname{
+		width: 230px;
+		border-radius: 3px;
+		height: 30px;
+		border: none;
+		border: 1px solid #dcdcdc;
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1) inset;
+		box-sizing: border-box;
+		padding-left: 6px;
+		color: #444;
+	}
+
+	#UserUsername{
+		width: 470px;
+		border-radius: 3px;
+		height: 30px;
+		border: none;
+		border: 1px solid #dcdcdc;
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1) inset;
+		box-sizing: border-box;
+		padding-left: 6px;
+		color: #444;
+	}
+
+	.last-name{
+		float: left;
+		width: 230px;
+		margin-right: 10px;
+		margin-bottom: 5px;
+	}
+
+	.first-name{
+		float: left;
+		width: 230px;
+	}
+
+	.checkboxes{
+		padding-left: 1px;
+	}
+
+	.checkboxes label{
+		color: #444;
+		margin-left: 7px;
+		padding-top: 2px;
+		font-size: 14px;
+		margin-right: 10px;
+	}
+
+	#radiobox label{
+		color: #444;
+		margin-left: 7px;
+		padding-top: 2px;
+		font-size: 14px;
+	}
+
+	#UserEmail{
+		width: 470px;
+		border-radius: 3px;
+		height: 30px;
+		border: none;
+		border: 1px solid #dcdcdc;
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1) inset;
+		box-sizing: border-box;
+		padding-left: 6px;
+		color: #444;
+	}
+
+	.modal-pass{
+		width: 470px;
+		height: 30px;
+		border-radius: 3px;
+		border: none;
+		border: 1px solid #dcdcdc;
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1) inset;
+		box-sizing: border-box;
+		padding-left: 6px;
+		color: #444;
+	}
+
+	#radiobox{
+		margin-bottom: 25px;
+		padding-left: 5px;
+	}
+
+	.alert{
+		margin-top: 0px;
+		color: #777;
+		font-size: 14px;
+		margin-bottom: 15px;
+	}
+
+	.modal-btns{
+		overflow: hidden;
+		margin: 0 auto;
+		width: 470px;
+		margin-bottom: 20px;
+	}
+
+	.login{
+		width: 80px;
+		height: 30px;
+		line-height:  30px;
+		float: left;
+		font-size:13px;
+		text-align:  center;
+		font-family:Arial;
+		font-weight:bold;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+		border-radius:3px;
+		border:1px solid #277ae6;
+		text-decoration:none;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #62a2f5), color-stop(100%, #5291e9) );
+		background:-moz-linear-gradient( center top, #62a2f5 5%, #5291e9 100% );
+		background:-ms-linear-gradient( top, #62a2f5 5%, #5291e9 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#62a2f5', endColorstr='#5291e9');
+		background-color:#62a2f5;
+		color:#ffffff;
+		display:inline-block;
+		text-shadow:1px 1px 0px #204e8a;
+	 	-webkit-box-shadow:inset 1px 1px 0px 0px #6da7f2;
+	 	-moz-box-shadow:inset 1px 1px 0px 0px #6da7f2;
+	 	box-shadow:inset 1px 1px 0px 0px #6da7f2;
+	 	margin-right:  15px;
+	 	cursor: pointer;
+	}
+
+	.login:hover{
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #5291e9), color-stop(100%, #62a2f5) );
+		background:-moz-linear-gradient( center top, #5291e9 5%, #62a2f5 100% );
+		background:-ms-linear-gradient( top, #5291e9 5%, #62a2f5 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5291e9', endColorstr='#62a2f5');
+		background-color:#5291e9;
+	}
+
+	.login:active{
+		position:relative;
+		top:1px;
+	}
+
+	.cancel{
+		width: 80px;
+		height: 20px;
+		line-height:  20px;
+		text-align: center;
+		font-size:13px;
+		font-family:Arial;
+		font-weight:bold;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+		border-radius:3px;
+		border:1px solid #dcdcdc;
+		padding:4px 11px;
+		text-decoration:none;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #f5f5f5), color-stop(100%, #dfdfdf) );
+		background:-moz-linear-gradient( center top, #f5f5f5 5%, #dfdfdf 100% );
+		background:-ms-linear-gradient( top, #f5f5f5 5%, #dfdfdf 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#dfdfdf');
+		background-color:#f5f5f5;
+		color:#777777;
+		display:inline-block;
+		text-shadow:1px 1px 0px #ffffff;
+	 	-webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+	 	-moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+	 	box-shadow:inset 1px 1px 0px 0px #ffffff;
+		float: left;
+		cursor: pointer;
+	}
+
+	.cancel:hover{
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #dfdfdf), color-stop(100%, #f5f5f5) );
+		background:-moz-linear-gradient( center top, #dfdfdf 5%, #f5f5f5 100% );
+		background:-ms-linear-gradient( top, #dfdfdf 5%, #f5f5f5 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#f5f5f5');
+		background-color:#dfdfdf;
+	}
+
+	.cancel:active{
+		position:relative;
+		top:1px;
+	}
+
+
+
+
+	/*----------先生用モーダルウインドウのデザイン----------*/
+
+	#login-teacher{
+		/*
+	  	background: none repeat scroll 0 0 rgba(255,255,255,1);
+	  	*/
+	  	background-color: #fcfcfc;
+	  	box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+	  	display: none;
+	  	padding: 20px;
+	  	width: 320px;
+	  	margin-top: 100px;
+	  	border-radius: 3px;
+	  	margin-left: auto;
+	  	margin-right: auto;
+		min-height: 260px;
+		border: solid 1px #999;
+		position: fixed;
+		top: 70px;
+		left: 50%;
+		margin-left: -160px;
+		z-index: 1000;
+	}
+
+	#login-teacher h2{
+		margin-bottom: 20px;
+		font-size: 14px;
+		color: #444;
+	}
+
+	.checkbox{
+		margin-bottom: 15px;
+		font-size: 14px;
+		color: #444;
+	}
+
+	.checkbox span{
+		margin-left: 5px;
+	}
+
+	.checkbox a{
+		font-size: 14px;
+		padding-left: 0px;
+		color: #5291e5;
+	}
+
+
+
+	/*----------生徒用モーダルウインドウのデザイン----------*/
+
+	#login-student{
+	  	background: none repeat scroll 0 0 rgba(255,255,255,1);
+	  	box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+	  	display: none;
+	  	padding: 20px;
+	  	width: 320px;
+	  	margin-top: 100px;
+	  	border-radius: 3px;
+	  	margin-left: auto;
+	  	margin-right: auto;
+		min-height: 260px;
+		border: solid 1px #999;
+		position: fixed;
+		top: 70px;
+		left: 50%;
+		margin-left: -160px;
+		z-index: 1000;
+	}
+
+	#login-student h2{
+		font-size: 14px;
+		margin-bottom: 20px;
+		color: #444;
+	}
+
+	#UserClasscode{
+		width: 470px;
+		height: 30px;
+		border-radius: 3px;
+		border: none;
+		border: 1px solid #dcdcdc;
+		/*
+		box-shadow:  1px 1px 5px rgba(0, 0, 0, 0.1), -1px -1px 5px rgba(0, 0, 0, 0.1);
+		*/
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1) inset;
+		box-sizing: border-box;
+		padding-left: 6px;
+		color: #444;
+	}
+
+	#radiobox label{
+		margin-right:10px;
+		color: #444;
+	}
+
+	.dammy-text{
+		text-align: center;
+		padding-top: 70px;
+		font-size: 16px;
+		color: #444;
+	}
+
+	#parent small{
+		display: block;
+		text-align: center;
+		color: #666;
+		margin-top: 30px;
+	}
+
+	.margin-top{
+		margin-top: 20px;
+	}
+
+
+
+
+
+	/*----------フッター部分のスタイル----------*/
+
+	footer{
+		width: 100%;
+		height: 80px;
+		background-color: #4291e9;
+	}
+
+	#inner-footer{
+		width: 768px;
+		margin: 0 auto;
+		height:80px;
+		overflow: hidden;
+	}
+
+	#footer-nav{
+		margin-left: 120px;
+		overflow: hidden;
+		list-style-type: none;
+		padding-top: 15px;
+	}
+
+	#footer-nav li{
+		float: left;
+		font-size: 14px;
+		color: #fff;
+		margin-right: 20px;
+	}
+
+	#footer-nav li a{
+		color: #fff;
+		text-decoration: none;
+	}
+
+	#footer-nav li a:hover{
+		text-decoration: underline;
+	}
+
+	#right-footer{
+		margin: 0 auto;
+		text-align: center;
+		width: 300px;
+		line-height: 40px;
+		color: #93c6f9;
+	}
+
+
+	/*----------ブラックアウト用レイヤー----------*/
+
+	#login-layer{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		opacity: 0.5;
+		z-index: 50;
+		display:  none;
+	}
+
+}

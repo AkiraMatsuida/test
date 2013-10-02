@@ -1,0 +1,429 @@
+
+/*----------モバイル用infoデザイン----------*/
+/*----------クラス編集画面用スタイル----------*/
+
+
+/*----------生徒リストのデザイン----------*/
+
+#wrap-userList{
+	width: 300px;
+	margin: 0 auto;
+	overflow: hidden;
+	box-sizing: border-box;
+	margin-top: 15px;
+}
+
+.userBox{
+	width: 298px;
+	height: 60px;
+	overflow: hidden;
+	position: relative;
+	border: solid 1px #e2e2e2;
+	background-color: #fcfcfc;
+	margin: 0 auto;
+}
+
+.option-field{
+	display: block;
+	width: 300px;
+	height: 60px;
+	position: absolute;
+	top: 0px;
+	left: -300px;
+}
+
+.inner-field{
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: rgba(30, 30, 30, 0.9);
+	/*
+	background-color: #dde6ed;
+	opacity: 0.8;
+	*/
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.change-span, .remove-span{
+	position: absolute;
+	z-index: 2;
+	display: block;
+	width: 120px;
+	height: 20px;
+	line-height: 20px;
+	font-size:11px;
+	font-family:Arial;
+	font-weight:normal;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #133559;
+	padding:0px 12px;
+	text-decoration:none;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #3b70a8), color-stop(100%, #215389) );
+	background:-moz-linear-gradient( center top, #3b70a8 5%, #215389 100% );
+	background:-ms-linear-gradient( top, #3b70a8 5%, #215389 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3b70a8', endColorstr='#215389');
+	background-color:#3b70a8;
+	color:#ffffff;
+	text-shadow:1px 1px 0px #244a;
+	-webkit-box-shadow:inset 1px 1px 0px 0px #73a2d4;
+	-moz-box-shadow:inset 1px 1px 0px 0px #73a2d4;
+	box-shadow:inset 1px 1px 0px 0px #73a2d4;
+	cursor: pointer;
+}
+
+.change-span:hover, .remove-span:hover{
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #215389), color-stop(100%, #3b70a8) );
+	background:-moz-linear-gradient( center top, #215389 5%, #3b70a8 100% );
+	background:-ms-linear-gradient( top, #215389 5%, #3b70a8 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#215389', endColorstr='#3b70a8');
+	background-color:#215389;
+}
+
+.mobile-cancel-span{
+	background-image: url(../../img/top/back.png);
+	background-repeat: no-repeat;
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	z-index: 2;
+}
+
+.cancel-span{
+	display: none;
+}
+
+.change-span{
+	top: 5px;
+	left: 10px;
+}
+
+.remove-span{
+	top: 33px;
+	left: 10px;
+}
+
+.mobile-cancel-span{
+	top: 20px;
+	right: 10px;
+}
+
+.userBox img{
+	display: block;
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+
+.userBox .userInfo{
+	width: 120px;
+	height: 50px;
+	float: left;
+	margin-top: 8px;
+	line-height: 1;
+}
+
+.userBox .userInfo p{
+	margin-top: 10px;
+}
+
+.userOption{
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	top: 17px;
+	right: 10px;
+}
+
+.mobile-user-option{
+	display: block;
+	bottom: 0px;
+	right: 0px;
+	background-image: url(../../img/top/group-setting.png);
+	background-repeat: no-repeat;
+	width: 23px;
+	height: 23px;
+	background-size: 23px 23px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.user-option{
+	display: none;
+}
+
+/*----------パスワード変更用モーダルのデザイン----------*/
+
+.info-modal{
+	background: none repeat scroll 0 0 rgba(255,255,255,1);
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+	display: none;
+	position: fixed;
+	z-index: 11000;
+	width: 300px;
+	border-radius: 3px;
+	left: 50%;
+	margin-left: -156px;
+	top: 150px;
+	min-height: 150px;
+	padding-bottom: 15px;
+	border: solid 7px #5291e9;
+}
+
+.info-header{
+	margin-top: 0px;
+	width: 280px;
+	height: 40px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	text-align: center;
+	color: #444444;
+	font-size: 14px;
+	line-height: 40px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom: solid 1px #c2c2c2;
+}
+
+.info-modal-content{
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.info-modal-content #UserPassword{
+	width: 270px;
+	height: 30px;
+	margin: 0 auto;
+	border: solid 1px #dcdcdc;
+	font-size: 14px;
+	padding-left: 10px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+.info-modal-content p{
+	text-align: center;
+	color: #444444;
+	margin-top: 20px;
+}
+
+.changePassBtns{
+	width: 220px;
+	margin: 0 auto;
+	margin-top: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	overflow:  hidden;
+	padding-top: 15px;
+	border-top: solid 1px #c2c2c2;
+	border-radius: 0px;
+}
+
+.removeFromClassBtns{
+	width: 200px;
+	margin: 0 auto;
+	overflow:  hidden;
+	padding-top: 15px;
+	margin-top: 20px;
+	border-top: solid 1px #c2c2c2;
+	border-radius: 0px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+/*パスワード変更ボタン*/
+.changeBtn{
+	height: 32px;
+	font-size:12px;
+	text-align:  center;
+	padding: 4px 14px;
+	font-family:Arial;
+	font-weight:bold;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #277ae6;
+	text-decoration:none;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #62a2f5), color-stop(100%, #5291e9) );
+	background:-moz-linear-gradient( center top, #62a2f5 5%, #5291e9 100% );
+	background:-ms-linear-gradient( top, #62a2f5 5%, #5291e9 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#62a2f5', endColorstr='#5291e9');
+	background-color:#62a2f5;
+	color:#ffffff;
+	display:inline-block;
+	text-shadow:1px 1px 0px #204e8a;
+	-webkit-box-shadow:inset 1px 1px 0px 0px #6da7f2;
+	-moz-box-shadow:inset 1px 1px 0px 0px #6da7f2;
+	box-shadow:inset 1px 1px 0px 0px #6da7f2;
+}
+
+.changeBtn:hover{
+	cursor: pointer;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #5291e9), color-stop(100%, #62a2f5) );
+	background:-moz-linear-gradient( center top, #5291e9 5%, #62a2f5 100% );
+	background:-ms-linear-gradient( top, #5291e9 5%, #62a2f5 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5291e9', endColorstr='#62a2f5');
+	background-color:#5291e9;
+}
+
+.changeBtn:active{
+	position:relative;
+	top:1px;
+}
+
+/*クラス除外ボタン*/
+.removeFromClassBtn{
+	height: 32px;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-size: 13px;
+	text-align:  center;
+	font-family:Arial;
+	font-weight:bold;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #277ae6;
+	text-decoration:none;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #62a2f5), color-stop(100%, #5291e9) );
+	background:-moz-linear-gradient( center top, #62a2f5 5%, #5291e9 100% );
+	background:-ms-linear-gradient( top, #62a2f5 5%, #5291e9 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#62a2f5', endColorstr='#5291e9');
+	background-color:#62a2f5;
+	color:#ffffff;
+	display:inline-block;
+	text-shadow:1px 1px 0px #204e8a;
+	-webkit-box-shadow:inset 1px 1px 0px 0px #6da7f2;
+	-moz-box-shadow:inset 1px 1px 0px 0px #6da7f2;
+	box-shadow:inset 1px 1px 0px 0px #6da7f2;
+}
+
+.removeFromClassBtn:hover{
+	cursor: pointer;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #5291e9), color-stop(100%, #62a2f5) );
+	background:-moz-linear-gradient( center top, #5291e9 5%, #62a2f5 100% );
+	background:-ms-linear-gradient( top, #5291e9 5%, #62a2f5 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5291e9', endColorstr='#62a2f5');
+	background-color:#5291e9;
+}
+
+.removeFromClassBtn:active{
+	position:relative;
+	top:1px;
+}
+
+/*キャンセルボタン*/
+.cancelBtn-info{
+	height: 23px;
+	margin-top: -1px;
+	float: right;
+	line-height: 28px;
+	font-size:13px;
+	font-family:Arial;
+	font-weight:bold;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #dcdcdc;
+	padding:4px 11px;
+	text-decoration:none;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #f5f5f5), color-stop(100%, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #f5f5f5 5%, #dfdfdf 100% );
+	background:-ms-linear-gradient( top, #f5f5f5 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#dfdfdf');
+	background-color:#f5f5f5;
+	color:#777777;
+	display:inline-block;
+	text-shadow:1px 1px 0px #ffffff;
+	-webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+	-moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+	box-shadow:inset 1px 1px 0px 0px #ffffff;
+}
+
+.cancelBtn-info:hover{
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #dfdfdf), color-stop(100%, #f5f5f5) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #f5f5f5 100% );
+	background:-ms-linear-gradient( top, #dfdfdf 5%, #f5f5f5 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#f5f5f5');
+	background-color:#dfdfdf;
+}
+
+.cancelBtn-info:active{
+	position:relative;
+	top:1px;
+}
+
+
+.done-btn{
+	padding: 7px 18px;
+	font-size: 13px;
+	font-family:Arial;
+	font-weight:bold;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #277ae6;
+	text-decoration:none;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #62a2f5), color-stop(100%, #5291e9) );
+	background:-moz-linear-gradient( center top, #62a2f5 5%, #5291e9 100% );
+	background:-ms-linear-gradient( top, #62a2f5 5%, #5291e9 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#62a2f5', endColorstr='#5291e9');
+	background-color:#62a2f5;
+	color:#ffffff;
+	display:inline-block;
+	text-shadow:1px 1px 0px #204e8a;
+	-webkit-box-shadow:inset 1px 1px 0px 0px #6da7f2;
+	-moz-box-shadow:inset 1px 1px 0px 0px #6da7f2;
+	box-shadow:inset 1px 1px 0px 0px #6da7f2;
+}
+
+.done-btn:hover{
+	cursor: pointer;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #5291e9), color-stop(100%, #62a2f5) );
+	background:-moz-linear-gradient( center top, #5291e9 5%, #62a2f5 100% );
+	background:-ms-linear-gradient( top, #5291e9 5%, #62a2f5 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5291e9', endColorstr='#62a2f5');
+	background-color:#5291e9;
+}
+
+.done-btn:active{
+	position:relative;
+	top:1px;
+}
+
+
+#optionLayer{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	opacity: 0;
+	z-index: 1000;
+	display:  none;
+}
+
+#confirmLayer{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.6;
+	z-index: 100;
+	display:  block;
+}
+
+
+
+
+

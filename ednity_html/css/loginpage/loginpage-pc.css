@@ -1,0 +1,718 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+/*----------PC用のスタイル----------*/
+
+@media all and (min-width: 768px){
+	/*----------共通のデザイン----------*/
+
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	}
+
+	html,body{
+		height: 100%;
+		overflow: visible;
+	}
+
+	div.content{
+		background-color: #ffffff;
+	}
+
+	/*
+	body{
+	    background: url(../../img/login/bg.jpg) no-repeat center center fixed;
+		background-size: cover;
+	}
+	*/
+
+	#flashMessage {
+		font-size: 12px !important;
+		color: red;
+		height: 20px !important;
+		line-height: 20px !important;
+		/*
+		padding: 10px;
+		*/
+		width: 272px;
+		margin-top: 5px !important;
+		margin-bottom: -15px !important;
+	}
+
+
+
+	/*----------ヘッダー部分のスタイル----------*/
+
+	header{
+		width: 100%;
+		background-color: #ffffff;
+		height: 80px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 60;
+		box-shadow:  2px 2px 5px rgba(92, 154, 239, 0.4), -2px -2px 5px rgba(92, 154, 239, 0.4);
+	}
+
+	#inner-header{
+		width: 80%;
+		max-width: 960px;
+		/*overflow: hidden;*/
+		margin: 0 auto;
+		height: 100%;
+	}
+
+	#inner-header img{
+		display: block;
+		width: 110px;
+		height: 35px;
+		float: left;
+		margin-top: 23px;
+		margin-left: 5px;
+	}
+
+	#inner-header nav{
+		display: block;
+		width: 450px;
+		float: right;
+		height: 100%;
+		margin-right: 5px;
+	}
+
+	#inner-header ul{
+		list-style-type: none;
+		/*overflow: hidden;*/
+		height: 100%;
+		width: 100%;
+		text-align: right;
+	}
+
+	#inner-header li{
+		height: 100%;
+		width: 80px;
+		line-height: 80px;
+		float: right;
+		margin-left: 0px;
+		font-size: 14px;
+		text-align: center;
+	}
+
+	#inner-header a{
+		display: inline;
+		text-decoration: none;
+		color: #444;
+	}
+
+	#inner-header li a{
+		display: block;
+	}
+
+	#inner-header li a:hover{
+		background-color: #f7f7f7;
+	}
+
+	#inner-header li.last-li{
+		margin-right: 20px;
+	}
+
+	#modal-zone{
+		position: relative;
+		margin-top: 0px;
+	}
+
+	#modal-zone #login-btn{
+		display: block !important;
+		text-align: center;
+		width: 60px;
+		margin-top: 25px;
+		height: 20px;
+		line-height: 20px;
+		font-size:13px;
+		font-family:Arial;
+		font-weight:bold;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+		border-radius:25px;
+		border:1px solid #277ae6;
+		padding:4px 15px;
+		text-decoration:none;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #62a2f5), color-stop(100%, #5291e9) );
+		background:-moz-linear-gradient( center top, #62a2f5 5%, #5291e9 100% );
+		background:-ms-linear-gradient( top, #62a2f5 5%, #5291e9 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#62a2f5', endColorstr='#5291e9');
+		background-color:#62a2f5;
+		color:#ffffff;
+		text-shadow:1px 1px 0px #204e8a;
+		-webkit-box-shadow:inset 1px 1px 0px 0px #6da7f2;
+		-moz-box-shadow:inset 1px 1px 0px 0px #6da7f2;
+		box-shadow:inset 1px 1px 0px 0px #6da7f2;
+		cursor: pointer;
+	}
+
+	#modal-zone #login-btn:hover{
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #5291e9), color-stop(100%, #62a2f5) );
+		background:-moz-linear-gradient( center top, #5291e9 5%, #62a2f5 100% );
+		background:-ms-linear-gradient( top, #5291e9 5%, #62a2f5 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5291e9', endColorstr='#62a2f5');
+		background-color:#5291e9;
+	}
+
+	#modal-zone #login-btn:active{
+		/*position:relative;*/
+		top:1px;
+	}
+
+	.mb-menu-btn{
+		display: none!important;
+	}
+
+	#mobile-menu-list{
+		display: none;
+	}
+
+	/*----------copy部分のスタイル----------*/
+
+	#copy{
+		width: 100%;
+		background-color: transparent;
+		background-image: url(../../img/login/photo.jpg);
+		background-repeat: repeat-x;
+		height: 500px;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+
+	#inner-copy{
+		width: 100%;
+		height: 500px;
+		background-image: url(../../img/login/copy-photo.jpg);
+		background-repeat: no-repeat;
+		background-position: top right;
+	}
+
+	#main-copy{
+		width: 80%;
+		max-width: 960px;
+		margin: 0 auto;
+		padding-top: 100px;
+	}
+
+	#copy h1{
+		/*
+		width: 70%;
+		margin-left: 10px;
+		*/
+		color: #ffffff;
+		text-align: left;
+		font-weight: bold;
+		font-size: 30px;
+		/*margin: 0!important;*/
+		letter-spacing: 0.3em;
+	}
+
+	#copy p{
+		/*
+		width: 70%;
+		margin-left: 10px;
+		*/
+		padding-top: 15px;
+		color: #ffffff;
+		text-align: left;
+		margin-top: 10px;
+		font-size: 21px;
+		letter-spacing: 0.3em;
+		margin-bottom: 35px;
+	}
+
+	#yellow-btns{
+		display: block;
+		margin-top: 10px;
+		position: static;
+		text-align: left;
+		height: 150px;
+	}
+
+	#inner-yellow-btns{
+		width: 660px;
+		/*overflow: hidden;*/
+		margin: 0px;
+		height: 150px;
+	}
+
+	.sign-up-btn{
+		font-size:18px;
+		font-family:Arial Black;
+		font-weight:normal;
+		-moz-border-radius:8px;
+		-webkit-border-radius:8px;
+		border-radius:3px;
+		border:1px solid #f0c803;
+		padding:11px 24px;
+		text-decoration:none;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #ffe354), color-stop(100%, #f7ce00) );
+		background:-moz-linear-gradient( center top, #ffe354 5%, #f7ce00 100% );
+		background:-ms-linear-gradient( top, #ffe354 5%, #f7ce00 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe354', endColorstr='#f7ce00');
+		background-color:#ffe354;
+		color:#ffffff;
+		display:inline-block;
+		text-shadow:1px 1px 0px #c2a40b;
+	 	-webkit-box-shadow:inset 1px 1px 0px 0px #fff4bd;
+	 	-moz-box-shadow:inset 1px 1px 0px 0px #fff4bd;
+	 	box-shadow:inset 1px 1px 0px 0px #fff4bd;
+		margin-top: 30px;
+		margin-left: 0px;
+	}
+
+	.sign-up-btn:hover{
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #f7ce00), color-stop(100%, #ffe354) );
+		background:-moz-linear-gradient( center top, #f7ce00 5%, #ffe354 100% );
+		background:-ms-linear-gradient( top, #f7ce00 5%, #ffe354 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7ce00', endColorstr='#ffe354');
+		background-color:#f7ce00;
+	}
+
+	.sign-up-btn:active{
+		position:relative;
+		top:1px;
+	}
+
+	#mobile-yellow-btns{
+		display: none;
+	}
+
+	/*----------interface部分のスタイル----------*/
+	#interface{
+		display: block;
+		width: 100%;
+		background-color:  #ffffff;
+		border: solid 1px #dfe3e5;
+		height: 100%;
+	}
+
+	#interface p{
+		text-align:  center;
+		font-size: 16px;
+		color: #444;
+		margin-top: 50px;
+		margin-bottom: 21px;
+		letter-spacing: 0.3em;
+		line-height: 2.0;
+		width: auto;
+		margin-right: 0px;
+		margin-left: 0px
+	}
+
+	#interface img{
+		display: block;
+		margin: 0 auto;
+		width: 770px;
+		height: 481px;
+	}
+
+
+
+	/*-----------description部分のスタイル----------*/
+
+	#description{
+		display: block;
+		background-color: #fcfcfc;
+		height: 970px;
+		width: 100%;
+	}
+
+	#description #desc-title{
+		text-align: center;
+		color: #444;
+		font-size: 30px;
+		padding-top: 50px;
+		margin-bottom:  50px;
+		font-weight: normal;
+		letter-spacing: 0.3em;
+	}
+
+	.desc-box{
+		width: 680px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	.desc-box h2{
+		letter-spacing: 0.3em;
+	}
+
+	#share{
+		display: block;
+		width: 200px;
+		float: left;
+		margin-right: 50px;
+	}
+
+	#main-desc-1{
+		float: right;
+		color: #444;
+		width: 430px;
+	}
+
+	#main-desc-1 h2{
+		margin-top:  40px;
+		font-size: 24px;
+		margin-bottom: 10px;
+		font-weight: normal;
+		text-align: left;
+	}
+
+	#main-desc-1 p{
+		font-size: 16px;
+		line-height: 2.0;
+	}
+
+	#quize{
+		width: 200px;
+		float: right;
+		display: block;
+		margin-left: 50px;
+	}
+
+	#main-desc-2{
+		float: right;
+		color: #444;
+		width: 430px;
+	}
+
+	#main-desc-2 h2{
+		margin-top:  40px;
+		font-size: 24px;
+		margin-bottom: 10px;
+		font-weight: normal;
+		text-align: left;
+	}
+
+	#main-desc-2 p{
+		font-size: 16px;
+		line-height: 2.0;
+	}
+
+	#progress{
+		display: block;
+		width: 200px;
+		float: left;
+		margin-right: 50px;
+	}
+
+	#main-desc-3{
+		float: left;
+		color: #444;
+		width: 430px;
+	}
+
+	#main-desc-3 h2{
+		margin-top:  40px;
+		font-size: 24px;
+		margin-bottom: 10px;
+		font-weight: normal;
+		text-align: left;
+	}
+
+	#main-desc-3 p{
+		font-size: 16px;
+		line-height: 2.0;
+	}
+
+	.dammy-line{
+		width: 768px;
+		height: 2px;
+		margin: 0 auto;
+		background-image: url(../../img/login/line.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+
+
+	/*----------bottom-links用のデザイン-----------*/
+
+	#bottom-links{
+		width: 100%;
+		background-color: #fcfcfc;
+	}
+
+	#inner-bottom-links{
+
+	}
+
+
+
+	/*----------フッター部分のスタイル----------*/
+
+	footer{
+		width: 100%;
+		height: 80px;
+		background-color: #4291e9;
+	}
+
+	#inner-footer{
+		width: 768px;
+		margin: 0 auto;
+		height:80px;
+		overflow: hidden;
+	}
+
+	#footer-nav{
+		margin-left: 120px;
+		overflow: hidden;
+		list-style-type: none;
+		padding-top: 15px;
+	}
+
+	#footer-nav li{
+		float: left;
+		font-size: 14px;
+		color: #fff;
+		margin-right: 20px;
+	}
+
+	#footer-nav li a{
+		color: #fff;
+		text-decoration: none;
+	}
+
+	#footer-nav li a:hover{
+		text-decoration: underline;
+	}
+
+	#right-footer{
+		margin: 0 auto;
+		text-align: center;
+		width: 300px;
+		line-height: 40px;
+		color: #93c6f9;
+	}
+
+
+	/*----------ログインフォーム----------*/
+
+	.box{
+	    /*background-color: #eef1f4;*/
+	    background-color: #ffffff;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	 	padding: 30px;
+	 	padding-top: 15px;
+	 	padding-bottom: 0px;
+	    border-radius: 5px;
+	    width: 300px !important;
+		border: solid 1px #999;
+		color: #131313;
+		display: none;
+		position: absolute;
+		top: 55px;
+		right: -10px;
+		z-index: 200;
+		text-align: left;
+		height: 270px;
+		opacity: 1 !important;
+	}
+
+	.box h2{
+		color: #444;
+		height: 10px;
+		font-size: 14px;
+		margin-bottom: 60px;
+		display: block !important;
+	}
+
+	#alert{
+		line-height: 20px !important;
+		position: absolute;
+		padding-right: 20px;
+		top: 50px;
+		left: 20px;
+		color: #444;
+	}
+
+	.box #UserLoginForm{
+		height: 70px !important;
+		margin-top: 0px;
+		padding-top: 0px;
+		display: block !important;
+	}
+
+	div.login-fm{
+		display: block;
+		height: 30px !important;
+		margin-bottom: 15px;
+	}
+
+
+	#UserUsername{
+		width: 315px;
+		border-radius: 5px;
+		height: 30px;
+		border: none;
+		border: 1px solid #dcdcdc;
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1) inset;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding-left: 6px;
+		color: #444;
+	}
+
+	.login-user{
+		width: 230px !important;
+		display: block !important;
+	}
+
+	#login-pass{
+		width: 230px !important;
+		display: block !important;
+	}
+
+	.pass{
+		width: 315px;
+		height: 30px;
+		border-radius: 5px;
+		/*float: left;*/
+		/*margin-right: 15px;*/
+		border: none;
+		border: 1px solid #dcdcdc;
+		/*
+		box-shadow:  1px 1px 5px rgba(0, 0, 0, 0.1), -1px -1px 5px rgba(0, 0, 0, 0.1);
+		*/
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1) inset;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding-left: 6px;
+		color: #444;
+	}
+
+	#top-login-div{
+		display: block;
+		width: 230px;
+		margin: 0 auto;
+		height: 40px;
+		margin-top: 70px;
+	}
+
+	.top-login{
+		float: left;
+		padding: 4px 15px;
+		height: 30px;
+		line-height:  22px;
+		font-size:13px;
+		text-align:  center;
+		font-family:Arial;
+		font-weight:bold;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+		border-radius:3px;
+		border:1px solid #277ae6;
+		text-decoration:none;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #62a2f5), color-stop(100%, #5291e9) );
+		background:-moz-linear-gradient( center top, #62a2f5 5%, #5291e9 100% );
+		background:-ms-linear-gradient( top, #62a2f5 5%, #5291e9 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#62a2f5', endColorstr='#5291e9');
+		background-color:#62a2f5;
+		color:#ffffff;
+		display:inline-block;
+		text-shadow:1px 1px 0px #204e8a;
+	 	-webkit-box-shadow:inset 1px 1px 0px 0px #6da7f2;
+	 	-moz-box-shadow:inset 1px 1px 0px 0px #6da7f2;
+	 	box-shadow:inset 1px 1px 0px 0px #6da7f2;
+	 	margin-top:  -40px;
+	 	cursor: pointer;
+	}
+
+	.top-login:hover{
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #5291e9), color-stop(100%, #62a2f5) );
+		background:-moz-linear-gradient( center top, #5291e9 5%, #62a2f5 100% );
+		background:-ms-linear-gradient( top, #5291e9 5%, #62a2f5 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5291e9', endColorstr='#62a2f5');
+		background-color:#5291e9;
+	}
+
+	.top-login:active{
+		position:relative;
+		top:1px;
+	}
+
+	.cancel-login-btn{
+		float: right;
+		margin-top: -40px;
+		width: 80px;
+		height: 20px;
+		line-height:  20px;
+		text-align: center;
+		font-size:13px;
+		font-family:Arial;
+		font-weight:bold;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+		border-radius:3px;
+		border:1px solid #dcdcdc;
+		padding:4px 11px;
+		text-decoration:none;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #f5f5f5), color-stop(100%, #dfdfdf) );
+		background:-moz-linear-gradient( center top, #f5f5f5 5%, #dfdfdf 100% );
+		background:-ms-linear-gradient( top, #f5f5f5 5%, #dfdfdf 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#dfdfdf');
+		background-color:#f5f5f5;
+		color:#777777;
+		display:inline-block;
+		text-shadow:1px 1px 0px #ffffff;
+	 	-webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+	 	-moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+	 	box-shadow:inset 1px 1px 0px 0px #ffffff;
+	 	display: block !important;
+	 	margin-right: 5px;
+	 	cursor: pointer;
+	}
+
+	.cancel-login-btn:hover{
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #dfdfdf), color-stop(100%, #f5f5f5) );
+		background:-moz-linear-gradient( center top, #dfdfdf 5%, #f5f5f5 100% );
+		background:-ms-linear-gradient( top, #dfdfdf 5%, #f5f5f5 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#f5f5f5');
+		background-color:#dfdfdf;
+	}
+
+	#lean_overlay{
+	  	position: fixed; z-index:100;
+	  	top: 0px;
+	  	left: 0px;
+	  	height: 100%;
+	  	width: 100%;
+	  	background: #000;
+	  	display: none;
+	}
+
+	/*----------ブラックアウト用レイヤー----------*/
+
+	#login-layer{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		opacity: 0.5;
+		z-index: 50;
+		display:  none;
+	}
+
+
+	.mb-br{
+		display: none;
+	}
+
+	.pc-br{
+		display: block;
+	}
+}
+
